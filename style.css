@@ -1,50 +1,74 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f4f8;
     padding: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .table-container {
-    max-width: 800px;
-    margin: auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    max-width: 600px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #ffffff;
-}
-
-th, td {
-    padding: 14px 20px;
-    text-align: left;
 }
 
 th {
-    background-color: #009879;
+    background-color: #34495e;
     color: #ffffff;
-    font-weight: bold;
+    padding: 12px;
     text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
 }
 
-tr {
-    border-bottom: 1px solid #dddddd;
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 1.1rem;
 }
 
-tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+/* Styles distinct column types */
+.equation {
+    color: #7f8c8d;
+    background-color: #f8fafc;
 }
 
-tr:last-of-type {
-    border-bottom: 2px solid #009879;
+.product {
+    color: #2c3e50;
+    background-color: #ffffff;
 }
 
-tr:hover {
-    background-color: #f1f7f5;
-    cursor: pointer;
+/* Explicit focus rule for your 2 x 2 execution benchmark */
+.highlight-row {
+    background-color: #fff9db !important;
+}
+.highlight-row td {
+    border-top: 2px solid #f59f00;
+    border-bottom: 2px solid #f59f00;
+}
+
+.font-bold {
+    font-weight: bold;
+    color: #d9480f;
+}
+
+tr:hover td {
+    background-color: #edf2f7;
 }
